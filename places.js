@@ -62,7 +62,7 @@ function renderPlaces(places) {
 
 
         scene.appendChild(model);
-
+        console.log("Models Loaded");
     });
 }
 };
