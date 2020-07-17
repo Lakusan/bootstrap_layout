@@ -20,15 +20,9 @@
 <script src="places.js"></script>
 
 <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
- 
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
-    <div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <script src="events.js"></script>
+
+ <div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -46,8 +40,19 @@
           </div>
         </div>
       </div>
+      
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+ 
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-scene>
+
+   
 
     <button id="hinweis" type="button" class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#ModalLong"style="position: absolute;top: 93%; left: 0%; z-index: 10;">Hinweis</button>
-    <script src="events.js"></script>
+    
 </body>
 </html>
