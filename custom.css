@@ -1,7 +1,10 @@
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    #hinweis {
+      background-color: #8064A2 !important;
     }
   }
 
-  
+  .modal {
+    width: 80% !important; 
+    height: 80% !important;
+  }
